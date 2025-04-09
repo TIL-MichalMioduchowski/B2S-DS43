@@ -1,0 +1,82 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Fieldsets styling */
+fieldset {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Inputs and buttons */
+input[type="button"],
+input[type="number"] {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 120px;
+}
+
+/* Container for Tableau Viz */
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  margin-top: 2rem;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+}
+
+/* Tableau Viz scroll animation */
+tableau-viz {
+  position: absolute;
+  animation: slide 2s linear infinite;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Animation to move dashboard side-to-side */
+@keyframes slide {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 2000px;
+  }
+}
